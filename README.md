@@ -2,22 +2,25 @@
 # MinesweeperC
 # =========================================================
 
-A command-line/graphical Minesweeper game written in C++ using SFML.
+A graphical Minesweeper game written in C++ using SFML, demonstrating advanced C++ programming, 2D game logic, and interactive GUI design.
 
 # ---------------------------------------------------------
 # Features
 # ---------------------------------------------------------
 
-- Classic Minesweeper gameplay with graphical interface using SFML
-- Random mine placement (press the smiley face to reset)
+- Classic Minesweeper gameplay with graphical interface
+- Random mine placement via the smiley face button
 - Manual and custom board support:
     - Configure board size and number of mines via `config.cfg` in `SFML_Demo\boards`
-    - Manual boards supported via `testboard` files in the `boards` folder
+    - Load predefined boards using `.brd` files in the `boards` folder
+    - In-game test/debug boards can be loaded via buttons for rapid testing
 - Interactive gameplay:
-    - Click tiles to reveal safe spaces or adjacent mine counts
-    - Place flags on suspected mines
-    - Automatic revealing of adjacent empty tiles
-    - Game over when a mine is clicked
+    - Left-click tiles to reveal safe spaces or number of adjacent mines
+    - Right-click to place or toggle flags on suspected mines
+    - Automatic recursive revealing of empty areas (flood-fill)
+    - Game state visual feedback (smiley face updates to win/lose)
+- Dynamic mine counter:
+    - Three-digit counter displays remaining mines (mines minus flags) in real time
 - Full visual feedback and expected Minesweeper mechanics
 
 # ---------------------------------------------------------
@@ -38,27 +41,28 @@ Building the game:
 # Customization
 # ---------------------------------------------------------
 
-- Edit `config.cfg` to change board dimensions and number of mines
-- Create your own board layouts by adding `.brd` files in the `boards` folder
-- Mines and numbers will be automatically loaded based on your board file
+- Modify `config.cfg` to change board dimensions and number of mines
+- Create custom board layouts by adding `.brd` files to the `boards` folder
+- The game automatically loads mines and numbers based on your board file
 
 # ---------------------------------------------------------
 # Gameplay
 # ---------------------------------------------------------
 
-- Left-click to reveal a tile
-- Right-click to place a flag
-- Use the smiley face button to reset the board
-- The game shows the number of adjacent mines for each revealed tile
-- Reveals empty areas automatically if no mines are adjacent
+- Left-click tiles to reveal safe areas
+- Right-click tiles to place or remove flags
+- Smiley face resets the board and reflects current game state (happy, win, lose)
+- Revealed tiles show the number of adjacent mines
+- Flood-fill algorithm automatically clears empty areas
 
 # ---------------------------------------------------------
 # Concepts Demonstrated
 # ---------------------------------------------------------
 
-- C++ object-oriented programming
-- 2D game logic and board management
-- File input for custom board loading
-- Graphics handling with SFML
-- Event-driven input and rendering
-- User interface design and interactivity
+- Advanced C++ programming (2D arrays, vectors, modular design)
+- Object-oriented principles in a game environment
+- File input/output for configuration and custom board loading
+- Event-driven programming with SFML
+- Real-time rendering and interactive GUI design
+- Recursive algorithms (flood-fill) for game logic
+- Dynamic UI elements, including counters and state-dependent visuals
