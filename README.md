@@ -59,7 +59,7 @@ Building the game:
 # Concepts Demonstrated
 # ---------------------------------------------------------
 
-- Advanced C++ programming (2D arrays, vectors, modular design)
+- C++ programming (2D arrays, vectors, modular design)
 - Object-oriented principles in a game environment
 - File input/output for configuration and custom board loading
 - Event-driven programming with SFML
