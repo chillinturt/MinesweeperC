@@ -66,3 +66,18 @@ Building the game:
 - Real-time rendering and interactive GUI design
 - Recursive algorithms (flood-fill) for game logic
 - Dynamic UI elements, including counters and state-dependent visuals
+
+- When all is done, running the game should create a similar result to the image below:
+
+- <img width="1222" height="634" alt="image" src="https://github.com/user-attachments/assets/242af4fc-318c-40f1-99a2-4ff65cf4a2df" />
+
+
+Continue playing to slowly reveal the mines using the power of deduction:
+
+<img width="1221" height="638" alt="image" src="https://github.com/user-attachments/assets/1a9d0643-fa0d-4ef0-b2b3-4a057e541d1a" />
+
+
+Click on and bomb and you lose!
+
+<img width="1222" height="637" alt="image" src="https://github.com/user-attachments/assets/448b04d5-1bf6-4715-b80c-2332f434bba2" />
+
